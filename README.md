@@ -8,17 +8,22 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Your system should have python 3.0+ installed.
+Your system should have following dependencies installed.
+
+* python 3.0+ 
+* scikit-learn 0.22.1
+
+
 
 
 ### Installing
 
-The dependencies are mentioned in the requirement.txt file.
+The dependencies are mentioned in the requirements.txt file.
 
 Step to install dependencies:
 
 ```
-pip3 install -r requirement.txt
+pip3 install -r requirements.txt
 ```
 
 ## Train the model
