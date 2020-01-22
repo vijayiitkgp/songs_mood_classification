@@ -20,7 +20,7 @@ Your system should have following dependencies installed.
 
 The dependencies are mentioned in the requirements.txt file.
 
-Step to install dependencies:
+Steps to install dependencies:
 
 ```
 pip3 install -r requirements.txt
@@ -28,25 +28,25 @@ pip3 install -r requirements.txt
 
 ## Train the model
 
-Activate your virtual environment, having above above mentioned dependencies installed.
-
-Go to commond line and go to the root directory of the project. Run the following command:
+* Go to commond line and activate your virtual environment, having above mentioned dependencies installed.
+* Go to the root directory of the project. 
+* Run the following command:
 
 ```
 pyhton3 training.py -f <training_file_name>.csv
 ```
 
-* Note: Give the file in .csv format only. <training_file_name>.csv file will contain the data to train the model.
+* Note: Give the file in .csv format only. <training_file_name>.csv file will contain data to train the model.
 
 * Above command will return the path where trained model has been saved.
 
-* Note: Training will take the time as ensemble techniques has been used for classification purpose.
+* Note: Training will take the time as ensemble techniques have been used for classification purpose.
 
 ### Get Prediction using saved model
 
-Activate your virtual environment, having above above mentioned dependencies installed.
-
-Go to commond line and go to the root directory of the project. Run the following command:
+* Go to commond line and activate your virtual environment, having above mentioned dependencies installed.
+* Go to the root directory of the project. 
+* Run the following command:
 
 ```
 pyhton3 prediction.py -f <evaluation_file_name>.csv -m <saved_model_file_path>
