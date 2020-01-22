@@ -1,87 +1,47 @@
-# Project Title
+# Songs Mood Classification
 
-One Paragraph of project description goes here
+Find the mood of the audio songs based on the given audio features. In this project only two moods have been taken care of, HAPPY and SAD.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for training the mmodel and for predicting purposes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Your system should have python 3.0+ installed.
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+The dependencies are mentioned in the requirement.txt file.
 
-Say what the step will be
+Step to install dependencies:
 
-```
-Give the example
-```
+pip3 install -r requirement.txt
 
-And repeat
+## Train the model
 
-```
-until finished
-```
+Activate your virtual environment, having above above mentioned dependencies installed.
 
-End with an example of getting some data out of the system or using it for a little demo
+Go to commond line and go to the root directory of the project. Run the following command:
 
-## Running the tests
+pyhton3 training.py -f <training_file_name>.csv
 
-Explain how to run the automated tests for this system
+Note: Give the file in .csv format only. <training_file_name>.csv file will contain the data to train the model.
 
-### Break down into end to end tests
+Above command will return the path where trained model has been saved.
 
-Explain what these tests test and why
+Note: Training will take the time as ensemble techniques has been used for classification purpose.
 
-```
-Give an example
-```
+### Get Prediction using saved model
 
-### And coding style tests
+Activate your virtual environment, having above above mentioned dependencies installed.
 
-Explain what these tests test and why
+Go to commond line and go to the root directory of the project. Run the following command:
 
-```
-Give an example
-```
+pyhton3 prediction.py -f <evaluation_file_name>.csv -m <saved_model_file_path>
 
-## Deployment
+Note: Give the file in .csv format only. <evaluation_file_name>.csv file will contain the data to evaluate the trained model.
 
-Add additional notes about how to deploy this on a live system
+Above command will override the given file and will add "MOOD_TAG" column in the file which will hold the prediction values.
 
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
