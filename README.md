@@ -33,7 +33,7 @@ pip3 install -r requirements.txt
 * Run the following command:
 
 ```
-pyhton3 training.py -f <training_file_name>.csv
+pyhton3 training.py -file <training_file_name>.csv
 ```
 
 * Note: Give the file in .csv format only. <training_file_name>.csv file will contain data to train the model.
@@ -49,7 +49,7 @@ pyhton3 training.py -f <training_file_name>.csv
 * Run the following command:
 
 ```
-pyhton3 prediction.py -f <evaluation_file_name>.csv -m <saved_model_file_path>
+pyhton3 prediction.py -file <evaluation_file_name>.csv -model <saved_model_file_path>
 ```
 
 * Note: Give the file in .csv format only. <evaluation_file_name>.csv file will contain the data to evaluate the trained model.
