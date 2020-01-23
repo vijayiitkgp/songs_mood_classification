@@ -63,7 +63,8 @@ if __name__ == "__main__":
         classes = {0:'SAD', 1: 'HAPPY'} 
         final_test['MOOD_TAG'] = y_pred_test
         final_test['MOOD_TAG'] = [classes[item] for item in final_test['MOOD_TAG'] ]
-        final_test.to_csv(str(args.File), index = None, header=True)
+        file_name = "evaluation_classified.csv"
+        final_test.to_csv(file_name, index = None, header=True)
 
     
         
