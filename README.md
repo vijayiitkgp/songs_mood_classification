@@ -1,6 +1,10 @@
 # Songs Mood Classification
 
-Find the mood of the audio songs based on the given audio features. In this project only two moods have been taken care of, HAPPY and SAD.
+Find the mood of the audio songs based on the given audio features. In this project only two moods have been taken care of, HAPPY and SAD. 
+
+```
+To know the more detail about approach and methodologies used in this project, please read the methodologies.docx file, which you can find in project itself.
+```
 
 ## Getting Started
 
