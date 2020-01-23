@@ -8,7 +8,7 @@ To know the more detail about approach and methodologies used in this project, p
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for training the mmodel and for predicting purposes.
+These instructions will get you a copy of the project up and running on your local machine for training the model and for getting the prediction from trained model.
 
 ### Prerequisites
 
