@@ -1,5 +1,5 @@
 xgboost==0.90
 pandas==0.25.0
-numpy==1.18.1
+numpy==1.22.0
 pandas==0.25.3
 scikit_learn==0.22.1
